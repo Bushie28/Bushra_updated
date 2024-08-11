@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Adding Light/Dark Mode Switcher",
+        "date": "2024-08-08",
+        "content": [
+        "I made a javascript file mode.js.",
+        " I added an event listener to ensure the code is ran when the user clicks on the toggle button to switch modes. ",
+        " i selected the button id theme-toggle from my html files and assigned it top the variable themeToggleButton. This lets the button be switched from light to dark mode and vice versa.",
+        " 'getCurrentTheme' will check if there is a theme in localstorage or sets itself to the default light mode. ",
+        " Then i applied theme to set some custom attributes that will be shown on the website. after the user clicks on the button, the text asks if you want to switch to the opposite mode. ",
+        " theme is applied according to what the user clicks. ",
+        " I also added another event listener called click to ensure the mode is switched immediately the button is clicked. ",
+        "After completing my javascript, i styled the dark and light theme using css.  "
+   ]
+    },
+    {
+        "title": "Adding posts.json to fetch and display data",
+        "date": "2024-08-09",
+        "content": [
+        "I made a blog.html file, then i created a data folder in the same folders as all of my html files ",
+        " I then created the json file posts.json to store the blog posts. ",
+        " I copied and completed the javascript code for scripts.js. ",
+        "I added a class called blog-post to help with the styling using css as well. "
+    ]
+    }
+]
+
+
+

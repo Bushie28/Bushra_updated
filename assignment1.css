@@ -1,0 +1,126 @@
+/*light mode*/
+:root {
+    --background-color: #B0C4DE; 
+    --text-color: black;
+    --link-color: #007bff;
+    --active-link-bg: #CD5C5C;
+    --nav-bg: #ffffff; /* light mode nav background */
+    --nav-link-color: #C0C0C0;
+    --nav-link-hover-color: #191970;
+    --footer-background: #f8f9fa;
+    --button-background: lightgray;
+    --button-text-color: black;
+}
+
+/* dark mode  */
+[data-theme='dark'] {
+    --background-color: #333; 
+    --text-color: white;
+    --link-color: #1e90ff;
+    --active-link-bg: #555;
+    --nav-bg: #222; /* Dark mode nav bg*/
+    --nav-link-color: #888;
+    --nav-link-hover-color: #1e90ff;
+    --footer-background: #111;
+    --button-background: darkgray;
+    --button-text-color: white;
+}
+
+/* Apply background color and text color */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Specific Styles */
+
+#HomePage{
+	text-align:center;
+}
+
+#About, #Projects  {
+    text-align: left;
+}
+
+Blog, #Contact {
+    padding: 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: var(--nav-link-color);
+    background-color: var(--nav-bg); /* Nav background */
+}
+
+.nav-links li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-links li a.active {
+    background-color: var(--active-link-bg);
+}
+
+.nav-links li a:hover {
+    color: var(--nav-link-hover-color);
+}
+
+footer {
+    background-color: var(--footer-background);
+}
+
+/* Button Styles */
+button {
+    background-color: var(--button-background);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--button-background); /* Modify as needed */
+}
+
+button:focus {
+    outline: 2px solid var(--link-color);
+}
+
+/* Blog Styles */
+.blog-list {
+    margin-top: 20px;
+}
+
+.blog-post {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: var(--background-color);
+}
+
+.blog-post h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.blog-post p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.blog-post small {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: var(--text-color);
+}
